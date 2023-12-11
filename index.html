@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;700;800;900&family=Lexend:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@200;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-b from-gray-50 to-blue-200 min-h-screen"
+    style="font-family: 'Montserrat', sans-serif"
+  >
+    <nav class="flex justify-between divide-y-2 border-slate-950">
+      <div>
+        <img
+          class="logo ml-10 mt-7"
+          src="https://st2.zoom.us/static/6.3.17532/image/new/topNav/Zoom_logo.svg"
+          alt="Zoom-logotypen"
+        />
+      </div>
+      <div>
+        <ul class="flex m-5 text-gray-700">
+          <li class="mx-8 mt-1 hidden md:block">Produkter</li>
+          <li class="mx-8 mt-1 hidden md:block">Lösningar</li>
+
+          <li class="mx-8 mt-1 hidden md:block">Planer och priser</li>
+          <li class="mx-8 mt-1">
+            <button
+              class="h-9 w-44 text-stone-50 -mt-2 rounded-2xl font-bold"
+              style="background-color: #0b5cff"
+            >
+              Registrera dig
+            </button>
+          </li>
+        </ul>
+        <button
+          id="tabletToggle"
+          aria-controls="navbar-left"
+          aria-expanded="false"
+          data-target="#navbar-left-tab"
+          data-toggle="collapse"
+          class="navbar-toggle collapsed hidden-xs"
+          type="button"
+          value="navbar"
+        >
+          <span class="sr-only">Växla navigering</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+    </nav>
+    <section
+      class="1 flex flex-col justify-center items-center mt-24 mx-24 mb-30"
+    >
+      <h1
+        class="md:text-6xl text-4xl font-bold text-gray-600 text-center leading-snug"
+      >
+        En plattform för <br />
+        <span class="" style="color: #0b5cff"> smidigare hemarbete </span>
+      </h1>
+      <p class="text-2xl mt-11 text-gray-700 text-center">
+        Sammanför team, omfamna arbetsplatser, engagera nya målgrupper och gläd
+        <br />dina kunder - allt på Zoom-plattformen du känner till och älskar.
+      </p>
+      <button
+        class="h-12 w-44 text-stone-50 mt-10 rounded-2xl font-bold"
+        style="background-color: #0b5cff"
+      >
+        Kom igång
+      </button>
+    </section>
+
+    <section
+      class="flex flex-col md:flex-row md:mt-24 justify-between text-gray-700 px-32"
+    >
+      <div class="w-full md:mx-10 md:w-6/12 md:px-12">
+        <h2 class="text-3xl font-bold mb-9 md:mb-5 md:mt-28 mt-40">
+          Flexibla lösningar för modernt teamsamarbete
+        </h2>
+        <p class="text-xl">
+          Kommunicera och samarbeta så att ni kan arbeta bättre ihop. Enkelt att
+          hantera och härligt att använda – Zoom driver den moderna
+          arbetsstyrkan.
+        </p>
+      </div>
+      <div class="flex justify-center items-center w-full md:w-6/12 md:h-auto">
+        <img
+          class="rounded-xl w-fit h-fit md:h-full mt-20 md:w-full md:mx-10"
+          src="visuals-Y4qzW3AsvqI-unsplash.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="md:px-32 flex mt-40 md:mt-60 justify-between items-center">
+      <div class="hidden md:block md:w-6/12 md:mx-10 md:px-12">
+        <img
+          class="rounded-xl"
+          src="jason-goodman-ZJlfUi5rTDU-unsplash.jpg"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-col text-gray-700 md:mx-10 md:w-6/12 px-32">
+        <h2 class="text-3xl font-bold mb-5">Zoom för utvecklare</h2>
+        <p class="text-xl">
+          Skapa innovativa appar och integreringar med Zooms plattform
+        </p>
+
+        <ul class="flex text-gray-700 flex-col my-10">
+          <div class="flex my-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"
+              />
+            </svg>
+            <li class="font-bold ml-5">Marknadsplats</li>
+          </div>
+          <div class="flex my-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"
+              />
+            </svg>
+
+            <li class="font-bold ml-5">API:er och SDK:er</li>
+          </div>
+          <div class="flex my-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+              />
+            </svg>
+
+            <li class="font-bold ml-5">Appar</li>
+          </div>
+          <div class="flex my-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+              />
+            </svg>
+
+            <li class="font-bold ml-5">Plattformslösningar</li>
+          </div>
+        </ul>
+
+        <button
+          class="h-12 w-80 text-gray-700 rounded-2xl font-bold border-2"
+          style="color: #0b5cff; border-color: #0b5cff"
+        >
+          Upptäck Zoom Developers
+        </button>
+      </div>
+    </section>
+    <section
+      class="h-96 md:mt-44 mt-32 flex md:flex-row flex-col justify-center items-center"
+    >
+      <div class="flex mx-10 md:mb-0 mb-0 md:mt-0 mt-44 md:px-0">
+        <div class="mx-1">
+          <img
+            src="https://st2.zoom.us/static/6.3.17532/image/home2/logo1-1.png"
+            alt="ServiceNow Logo"
+            class="mx-1"
+          />
+          <img
+            src="https://st3.zoom.us/static/6.3.17532/image/home2/logo1-2.png"
+            alt="Rakuten Logo"
+            class="mx-1"
+          />
+          <img
+            src="https://st1.zoom.us/static/6.3.17532/image/home2/logo1-3.png"
+            alt="The New York Times Logo"
+            class="mx-1"
+          />
+        </div>
+        <div class="mx-1">
+          <img
+            src="https://st3.zoom.us/static/6.3.17532/image/home2/logo2-1.png"
+            alt="California State Parks Logo"
+            class="mx-1"
+          />
+          <img
+            src="https://st1.zoom.us/static/6.3.17532/image/home2/logo2-2.png"
+            alt="Atlassian Logo"
+            class="mx-1"
+          />
+          <img
+            src="https://st2.zoom.us/static/6.3.17532/image/home2/logo2-3.png"
+            alt="Nasdaq Logo"
+            class="mx-1"
+          />
+        </div>
+        <div class="mx-1">
+          <img
+            src="https://st1.zoom.us/static/6.3.17532/image/home2/logo3-1.png"
+            alt="Formula 1 Logo"
+            class="mx-1"
+          />
+          <img
+            src="https://st2.zoom.us/static/6.3.17532/image/home2/logo3-2.png"
+            alt="Moffitt Cancer Center Logo"
+            class="mx-1"
+          />
+          <img
+            src="https://st3.zoom.us/static/6.3.17532/image/home2/logo3-3.png"
+            alt="Walmart Logo"
+            class="mx-1"
+          />
+        </div>
+        <div class="mx-1">
+          <img
+            src="https://st2.zoom.us/static/6.3.17532/image/home2/logo4-1.png"
+            alt="World Wildife Fund Logo"
+            class="mx-1"
+          />
+          <img
+            src="https://st3.zoom.us/static/6.3.17532/image/home2/logo4-2.png"
+            alt="Capital One Logo"
+            class="mx-1"
+          />
+          <img
+            src="https://st1.zoom.us/static/6.3.17532/image/home2/logo4-3.png"
+            alt="FedEx Logo"
+            class="mx-1"
+          />
+        </div>
+      </div>
+      <div
+        class="mx-10 md:flex flex flex-col justify-center items-center md:mt-0 mt-20"
+      >
+        <h2 class="text-2xl font-bold text-gray-700">
+          Företag runt om i världen väljer Zoom
+        </h2>
+        <button
+          class="h-12 w-64 text-slate-50 rounded-2xl font-bold border-2 mt-5 md:mt-8 md:mb-0"
+          style="background-color: #0b5cff"
+        >
+          Gör det du med
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
